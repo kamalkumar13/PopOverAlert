@@ -27,9 +27,9 @@ class SampleViewController: UIViewController, UIAdaptivePresentationControllerDe
     @objc public func openAlert(sender:UIBarButtonItem) {
          
         let popOverAlertViewController = PopOverAlertViewController.instantiate()
-        popOverAlertViewController.setButtonText("OK")
-        popOverAlertViewController.setMessage("Do you want to send mail?")
-        popOverAlertViewController.setSubMessage("When you press OK, the mail will be sent immediately.")
+        popOverAlertViewController.setButtonText("Got it!")
+        popOverAlertViewController.setMessage("Tap here to start a new chat or group")
+        //popOverAlertViewController.setSubMessage("When you press OK, the mail will be sent immediately.")
         
         popOverAlertViewController.setShowsVerticalScrollIndicator(true)
         popOverAlertViewController.setSeparatorStyle(UITableViewCell.SeparatorStyle.singleLine)
@@ -40,7 +40,7 @@ class SampleViewController: UIViewController, UIAdaptivePresentationControllerDe
         popOverAlertViewController.setMessageFont(UIFont.systemFont(ofSize: 16))
         popOverAlertViewController.setSubMessageFont(UIFont.systemFont(ofSize: 12))
         popOverAlertViewController.setButtonTextFont(UIFont.systemFont(ofSize: 14))
-        popOverAlertViewController.setButtonTextColor(UIColor.black)
+        popOverAlertViewController.setButtonTextColor(UIColor.white)
         
         popOverAlertViewController.completionHandler = { () -> Void in
 

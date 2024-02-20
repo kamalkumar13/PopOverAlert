@@ -28,6 +28,9 @@ extension PopOverAlertViewController {
                     cell.detailTextLabel?.font = subMessageFont
                 }
                 
+                cell.textLabel?.textColor = .white
+                cell.detailTextLabel?.textColor = .white
+                
                 return cell
             }
         } else if (indexPath.section == 1) {
