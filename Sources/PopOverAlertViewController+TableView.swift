@@ -14,6 +14,10 @@ extension PopOverAlertViewController {
         return 1
     }
     
+    open override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
     override open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell
         
@@ -29,7 +33,9 @@ extension PopOverAlertViewController {
                 }
                 
                 cell.textLabel?.textColor = .white
+                
                 cell.detailTextLabel?.textColor = .white
+                cell.detailTextLabel?.isHidden = true
                 
                 return cell
             }
@@ -40,7 +46,8 @@ extension PopOverAlertViewController {
                 cell.textLabel?.font = buttonTextFont
                 cell.textLabel?.textColor = buttonTextColor
                 cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
-
+                cell.textLabel?.textAlignment = .right
+                
                 return cell
             }
         }

@@ -38,7 +38,7 @@ open class PopOverAlertViewController: UITableViewController, UIAdaptivePresenta
         super.viewDidLoad()
         
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 45
+        tableView.estimatedRowHeight = 40
         tableView.showsHorizontalScrollIndicator = false
         tableView.showsVerticalScrollIndicator = showsVerticalScrollIndicator
         tableView.separatorStyle = separatorStyle
