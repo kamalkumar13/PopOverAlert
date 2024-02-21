@@ -26,7 +26,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MessageCell" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUN-kb-4FG">
-                                            <rect key="frame" x="8" y="4" width="359" height="36"/>
+                                            <rect key="frame" x="8" y="2" width="359" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -34,10 +34,10 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="HUN-kb-4FG" firstAttribute="top" secondItem="zQr-Qo-4m7" secondAttribute="top" constant="4" id="4BX-hW-p1C"/>
+                                        <constraint firstItem="HUN-kb-4FG" firstAttribute="top" secondItem="zQr-Qo-4m7" secondAttribute="top" constant="2" id="4BX-hW-p1C"/>
                                         <constraint firstAttribute="trailing" secondItem="HUN-kb-4FG" secondAttribute="trailing" constant="8" id="Qco-AW-rTC"/>
                                         <constraint firstItem="HUN-kb-4FG" firstAttribute="leading" secondItem="zQr-Qo-4m7" secondAttribute="leading" constant="8" id="QuD-5p-Bw6"/>
-                                        <constraint firstAttribute="bottom" secondItem="HUN-kb-4FG" secondAttribute="bottom" constant="4" id="d3G-E5-YAv"/>
+                                        <constraint firstAttribute="bottom" secondItem="HUN-kb-4FG" secondAttribute="bottom" constant="2" id="d3G-E5-YAv"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

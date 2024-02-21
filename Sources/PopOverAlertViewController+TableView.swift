@@ -12,14 +12,14 @@ extension PopOverAlertViewController {
     
     open override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
-            return 4
+            return 1
         } else {
             return 0
         }
     }
     open override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0 {
-            let view = UIView.init(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 4))
+            let view = UIView.init(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 1))
             view.backgroundColor = .clear
             return view
         } else {
@@ -46,7 +46,6 @@ extension PopOverAlertViewController {
                 cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell")!
                 
                 let textLabel = cell.viewWithTag(101) as! UILabel
-                textLabel.frame = cell.contentView.frame
                 textLabel.text = messege
                 textLabel.font = messageFont
                 textLabel.textColor = .white
