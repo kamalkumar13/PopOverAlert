@@ -10,6 +10,25 @@ extension PopOverAlertViewController {
         return 2
     }
     
+    open override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 4
+        } else {
+            return 0
+        }
+    }
+    open override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0 {
+            let view = UIView.init(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 4))
+            view.backgroundColor = .clear
+            return view
+        } else {
+            let view = UIView.init(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 0))
+            view.backgroundColor = .clear
+            return view
+        }
+    }
+    
     override open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -23,20 +42,26 @@ extension PopOverAlertViewController {
         
         if (indexPath.section == 0) {
             if (indexPath.row == 0) {
+                
                 cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell")!
-                cell.textLabel?.text = messege
-                cell.textLabel?.font = messageFont
                 
-                if let subMessage = self.subMessage {
-                    cell.detailTextLabel?.text = subMessage
-                    cell.detailTextLabel?.font = subMessageFont
-                }
+                let textLabel = cell.viewWithTag(101) as! UILabel
+                textLabel.frame = cell.contentView.frame
+                textLabel.text = messege
+                textLabel.font = messageFont
+                textLabel.textColor = .white
+                textLabel.textAlignment = .left
+                                
                 
-                cell.textLabel?.textColor = .white
-                
-                cell.detailTextLabel?.textColor = .white
-                cell.detailTextLabel?.isHidden = true
-                
+//                let detailTextLabel = cell.viewWithTag(102) as! UILabel
+//                if let subMessage = self.subMessage {
+//                    detailTextLabel.text = subMessage
+//                    detailTextLabel.font = subMessageFont
+//                }
+//                detailTextLabel.textColor = .white
+//                detailTextLabel.isHidden = true
+
+                                
                 return cell
             }
         } else if (indexPath.section == 1) {
@@ -47,7 +72,7 @@ extension PopOverAlertViewController {
                 cell.textLabel?.textColor = buttonTextColor
                 cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
                 cell.textLabel?.textAlignment = .right
-                
+                                
                 return cell
             }
         }

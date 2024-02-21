@@ -28,7 +28,7 @@ class SampleViewController: UIViewController, UIAdaptivePresentationControllerDe
          
         let popOverAlertViewController = PopOverAlertViewController.instantiate()
         popOverAlertViewController.setButtonText("Got it!")
-        popOverAlertViewController.setMessage("Tap here to start a new chat or group")
+        popOverAlertViewController.setMessage("Tap here to start a new chat or group Tap here to start a new chat or group ")
         //popOverAlertViewController.setSubMessage("When you press OK, the mail will be sent immediately.")
         
         popOverAlertViewController.setShowsVerticalScrollIndicator(true)
