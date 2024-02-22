@@ -3,7 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,9 +25,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MessageCell" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUN-kb-4FG">
-                                            <rect key="frame" x="8" y="2" width="359" height="40"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out “Daakia”, an encrypted, free HD calling, social messaging app with translation." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUN-kb-4FG">
+                                            <rect key="frame" x="10" y="2" width="357" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -36,7 +36,7 @@
                                     <constraints>
                                         <constraint firstItem="HUN-kb-4FG" firstAttribute="top" secondItem="zQr-Qo-4m7" secondAttribute="top" constant="2" id="4BX-hW-p1C"/>
                                         <constraint firstAttribute="trailing" secondItem="HUN-kb-4FG" secondAttribute="trailing" constant="8" id="Qco-AW-rTC"/>
-                                        <constraint firstItem="HUN-kb-4FG" firstAttribute="leading" secondItem="zQr-Qo-4m7" secondAttribute="leading" constant="8" id="QuD-5p-Bw6"/>
+                                        <constraint firstItem="HUN-kb-4FG" firstAttribute="leading" secondItem="zQr-Qo-4m7" secondAttribute="leading" constant="10" id="QuD-5p-Bw6"/>
                                         <constraint firstAttribute="bottom" secondItem="HUN-kb-4FG" secondAttribute="bottom" constant="2" id="d3G-E5-YAv"/>
                                     </constraints>
                                 </tableViewCellContentView>
