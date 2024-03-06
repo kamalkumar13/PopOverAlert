@@ -135,6 +135,10 @@ open class PopOverAlertViewController: UITableViewController, UIAdaptivePresenta
         self.messege = message
     }
     
+    @objc open func getMessage() -> String {
+        return self.messege ?? ""
+    }
+    
     @objc open func setSubMessage(_ subMessage:String) {
         self.subMessage = subMessage
     }
