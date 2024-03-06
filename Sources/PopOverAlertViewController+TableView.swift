@@ -64,6 +64,7 @@ extension PopOverAlertViewController {
 //                detailTextLabel.textColor = .white
 //                detailTextLabel.isHidden = true
 
+                cell.selectionStyle = .none
                                 
                 return cell
             }
@@ -75,7 +76,9 @@ extension PopOverAlertViewController {
                 cell.textLabel?.textColor = buttonTextColor
                 cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
                 cell.textLabel?.textAlignment = .right
-                                
+                
+                cell.selectionStyle = .none
+                
                 return cell
             }
         }
